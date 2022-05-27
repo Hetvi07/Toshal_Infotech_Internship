@@ -1,217 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Helvetica', sans-serif !important;
-  }
-
-
-  #navbarSupportedContent2 ul>li:not(:last-child) a:after {
-    content: " / ";
-    color: rgb(255, 255, 255);
+    font-family: helvetica;
+    overflow-x: hidden;
 }
 
-.mid-part{
+.wrap {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    height: 125px;
+    border-bottom: 2px solid #cccccc;
+    letter-spacing: -2px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 48px;
+    padding-left: 265px;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 15px;
+    list-style: none;
+
+}
+
+.menu {
+    padding-left: 480px;
+    display: inline-block;
+
+}
+
+.menu ul {
+    list-style-type: none;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: normal;
+
+}
+
+.menu li a:hover {
+    color: #cccccc;
+}
+
+.content-main {
+    padding-top: 127px;
+    font-size: 35px;
+    font-weight: bolder;
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 150px;
-    border-bottom: 1px solid rgb(222, 226, 230)
-    
-}
-.navbar-brand{
-    font-size: larger;
+    letter-spacing: -2px;
 }
 
-.bottom-half{
-
-    padding-top: 50px;
-    padding-bottom: 100px;
-    
-
+.content-mini {
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
 }
 
-/*********footer*******************/
-. kilimanjaro_area {
-    
-    position: relative;
-    z-index: 1;
-	}
-	.foo_top_header_one {
-    background-color: rgb(222, 226, 230);
-    color: rgb(0, 0, 0);
-    
-}
-.section_padding_100_70 {
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-.foo_top_header_one {
-    color: rgb(0, 0, 0);
-}.kilimanjaro_part {
-    margin-bottom: 30px;
-}
-.foo_top_header_one .kilimanjaro_part > h5 {
-    color: rgb(0, 0, 0);
+.btn:hover {
+    background-color: #cccccc;
+    color: #222222;
 }
 
-.kilimanjaro_blog_area > a, .foo_top_header_one .kilimanjaro_part > p {
-    color: rgb(0, 0, 0);
-}
-p, ul li, ol li {
-    font-weight: 300;
-}
-ul {
+.btn {
+    background-color: #222222;
+    color: white;
     margin: 0;
-    padding: 0;
-}
-.kilimanjaro_bottom_header_one {
-    background-color: rgb(248, 243, 243);
-}
-.section_padding_50 {
-    padding: 50px 0;
-}
-.kilimanjaro_bottom_header_one p {
-    color: rgb(0, 0, 0);
-    margin: 0;
-}
-p, ul li, ol li {
-    font-weight: 300;
-}
-.kilimanjaro_bottom_header_one a {
-    color: inherit;
-    font-size: 14px;
-}
-a, h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-}
-.m-top-15 {
-    margin-top: 15px;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-.kilimanjaro_widget > li {
-    display: inline-block;
-}
-p, ul li, ol li {
-    font-weight: 300;
-}
-ol li, ul li {
-    list-style: outside none none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-.kilimanjaro_links a {
-    border-bottom: 1px solid #333;
-    color: rgba(255,255,255,.5);
-    display: block;
-    font-size: 13px;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-}
-.kilimanjaro_links a {
-    color: rgba(255,255,255,.5);
-    font-size: 13px;
-}
-top-15 {
-    margin-top: 15px;
-}
-.foo_top_header_one .kilimanjaro_part > h5 {
-    color: rgb(0, 0, 0);
-}
-
-.kilimanjaro_social_links > li {
-    display: inline-block;
-}
-p, ul li, ol li {
-    font-weight: 300;
-}
-.kilimanjaro_social_links a {
-    border: 1px solid #333;
-    border-radius: 6px;
-    color: #888;
-    display: inline-block;
-    font-size: 13px;
-    margin-top: 20px;
-    margin-bottom: 3px;
-    padding: 7px 12px;
-}
-.kilimanjaro_blog_area .kilimanjaro_date {
-    color: #27ae60;
-    font-size: 13px;
-    margin-bottom: 5px;
-    margin-top: 50px;
-}
-.kilimanjaro_blog_area > p {
-    color: rgb(0, 0, 0);
-    line-height: 1.3;
-    margin-bottom: 0;
-}
-
-.content-blog{
-    padding-top: 30px;
-}
-.kilimanjaro_works > a {
-    display: inline-block;
-    float: left;
-    position: relative;
-    width: 33.33333333%;
-    z-index: 1;
-}
-.kilimanjaro_thumb {
-    left: 0;
     position: absolute;
-    top: 0;
-    width: 75px;
+    top: 443px;
+    left: 50%;
+
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px 35px 10px 35px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 17px;
+
 }
 
-.kilimanjaro_blog_area {
-    border-bottom: 1px solid rgb(166, 151, 151);
-    margin-bottom: 15px;
-    padding: 0 0 15px 90px;
+.line {
+    margin-top: 400px;
+    color: #dcdcdc;
+    background-color: #dcdcdc;
+    border-width: 0.6px;
+}
+
+.project-title {
+    padding-left: 265px;
+    padding-top: 220px;
+    letter-spacing: -1px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.project {
+    width: 880px;
+    height: 278px;
+
+    letter-spacing: normal;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.box {
+    width: 980px;
+    height: 278px;
+    text-align: center;
+    padding-right: 27px;
+    padding-left: 0%;
+
+}
+
+img {
+    width: 280px;
+    height: 200px;
+}
+
+.h1 {
+    padding-top: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.h2 {
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #8f8f8f;
+}
+
+.about {
+    padding: 0px;
+    margin: 0px;
+    height: 460px;
+    width: 100%;
+    background-color: #eae9e9;
+    letter-spacing: normal;
+    display: flex;
+
+
+}
+
+.about-us {
+    padding-left: 267px;
+    width: 30%;
+
+}
+
+.fa-brands {
+    width: 20px;
+    min-height: 20px;
+    margin: 25px auto;
+    margin-right: 25px;
+    border-spacing: 7px;
     position: relative;
-    z-index: 1;
 }
 
-.about-me{
-    padding-top: 20px;
-    font-size: medium;
+.fa-brands::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    right: -7px;
+    bottom: -7px;
+    border: black 3px solid;
+    display: inline-block;
+    border-radius: 18px;
 }
-.new-part{
+
+.fa-brands:hover {
+    color: #222222;
+    width: 22px;
+    min-height: 22px;
+    border-radius: 19px;
+
+}
+
+.icons {
+    display: inline-block;
+    display: flex;
+    margin-left: 10px;
+}
+
+.new {
     padding-left: 50px;
 }
 
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
+.pic {
+    width: 150px;
+    height: 100px;
 
-  .footer-end{
-      padding-bottom: 1000px;
-  }
+}
+
+.new1 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.p1 {
+    padding-top: 40px;
+    letter-spacing: -1px;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.p2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #444444;
+    line-height: 25px;
+}
+
+.p11 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 22px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+
+.p12 {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #ca1f1f;
+    line-height: 40px;
+}
+
+.p13 {
+    color: #8f8f8f;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.copyright {
+    letter-spacing: normal;
+    height: 260px;
+    padding-left: 265px;
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.burn {
+    color: #ca1f1f;
+}
