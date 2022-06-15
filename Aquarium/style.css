@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     font-family: 'Libre Caslon Text', serif;
     
+    
 }
 * {
     margin: 0;
@@ -31,12 +32,14 @@ h1, h2, h4, h5, h6 {
 
 nav ul {
     margin-top: 6vh;
-    margin-left: 8vh;
+    margin-left: 7vh;
+    
 }
 
 nav ul li {
     display: inline;
-    padding-left: 2vw;
+    padding-left: 1.3vw;
+    padding-right: 0vw;
 
 }
 
@@ -74,7 +77,7 @@ nav ul li a:hover {
 }
 
 .sub_container {
-    max-width: 35vw;
+    max-width: 34vw;
     z-index: 100;
     position: absolute;
     margin-top: 30vh;
@@ -98,19 +101,23 @@ nav ul li a:hover {
 
 .top {
     text-align: center;
+    margin-bottom: 4vh;
 }
 
 .middle {
-    color: rgb(88, 85, 85);
-    margin-top: 1vh;
+     
+    color: rgb(0, 0, 0);
+    margin-top: 0.8vh;
+    line-height: 1.3;
     text-align: center;
     font-size: 3.5vh;
 }
 
 .bottom {
-    margin-top: 1vh;
+    line-height: 1.2;
     text-align: center;
     font-size: 2.5vh;
+    margin-bottom: 3vh;
 }
 
 .btn button {
@@ -167,6 +174,7 @@ button:hover {
     display: flex;
     justify-content: right;
     margin-right: 4vw;
+   
 }
 
 .sub_container2 {
@@ -199,6 +207,7 @@ button:hover {
     padding-bottom: 0.5vh;
 }
 .sub_container2 .bottom {
+    line-height: 1.5;
     text-align: center;
     margin-right: 4vh;
 }
@@ -265,6 +274,7 @@ button:hover {
 }
 
 .sub_container3 .bottom {
+    line-height: 1.5;
     text-align: left;
     margin-left: 5vh;
     margin-right: 5vh;
@@ -293,6 +303,7 @@ button:hover {
 }
 
 .sub_container4 {
+    
     max-width: 50vw;
     z-index: 100;
     position:absolute;
@@ -304,7 +315,7 @@ button:hover {
 }
 
 .sub_container4 .bottom{
-    
+    line-height: 1.5;
     text-align: right;
     margin-right: 5vw;
 }
@@ -358,6 +369,7 @@ button:hover {
 }
 
 .sub_container5 {
+    line-height: 1.8;
     max-width: 25vw;
     z-index: 100;
     position: absolute;
@@ -380,6 +392,7 @@ button:hover {
 }
 
 .sub_container5 .bottom {
+    line-height: 1.5;
     text-align: left;
     margin-left: 5vh;
 }
@@ -450,6 +463,7 @@ button:hover {
 }
 
 .sub_container6 {
+    line-height: 1.8;
     max-height: 30vh;
     max-width: 60vw;
     z-index: 100; 
@@ -470,7 +484,7 @@ button:hover {
 
 .sub_container6 .bottom {
     /* padding-bottom: 5vh; */
-    line-height: 2;
+    line-height: 1.5;
 }
 
 @media screen and (max-width:650px) {
@@ -507,6 +521,7 @@ button:hover {
 }
 
 .sub_container7{
+    line-height: 1.5;
     display: flex;
     flex-direction: row;
 }
